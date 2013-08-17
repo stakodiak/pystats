@@ -2,7 +2,7 @@
 import math
 
 def main ():
-    s = Series (map (int, "1 2 3".split ()))
+    s = Series ([1, 2, 3])
     print s.mean
 
 def mean (series):
