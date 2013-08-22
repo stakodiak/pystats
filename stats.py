@@ -19,6 +19,13 @@ def variance (series):
     v = sum ([(s - m)**2 for s in series]) / (len (series) - 1.0)
     return v
 
+def avedev (series):
+    # measure of central tendency
+    measure = mean
+    m = measure (series)
+    ad = sum ([abs(i - m) for i in series]) / float (len (series))
+    return ad
+
 class Series:
     mean = 0.0
     variance = 0.0
