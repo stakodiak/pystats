@@ -5,6 +5,11 @@ def main ():
     s = Series ([1, 2, 3])
     print s.mean
 
+# Functions:
+
+def avg (series):
+    return mean (series)
+
 def mean (series):
     m = sum (series) / float (len (series))
     return m
