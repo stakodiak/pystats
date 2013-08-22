@@ -26,6 +26,9 @@ def avedev (series):
     ad = sum ([abs(i - m) for i in series]) / float (len (series))
     return ad
 
+def averagea (series):
+    s = [bool (i) if type (i) is str else i for i in series]
+    return mean (s)
 class Series:
     mean = 0.0
     variance = 0.0
